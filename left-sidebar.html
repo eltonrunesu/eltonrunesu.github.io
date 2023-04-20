@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="project/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Runesu</a></h1>
+					
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Sentiment Analysis for Amazon Products</h2>
+							<p>What are people saying about the product?<br />
+								Do they love it or not?</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>In this Project</h3>
+											<p>Programming a Natural Language Processing algorithm that can read comments and determine whether they are positive or negative towards the Amazon product.</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://towardsdatascience.com/sentiment-analysis-concept-analysis-and-applications-6c94d6f58c17" class="button">What is Sentiment Analysis?</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/avatar2.jpg" alt="" /></a>
+											<h3>By <b>Elton Runesu</b></h3>
+											<p>What's up doc?</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="#" class="button">View Resume</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="project/images/pic01.jpg" alt="" /></a>
+										<h3>What is Sentiment Analysis?</h3>
+										<p>Sentiment analysis is a technique that uses natural language processing to extract and classify the emotions or opinions expressed in a text.
+											 For example, if someone writes a product review, sentiment analysis can tell us whether the review is positive, negative or neutral.
+											  Sentiment analysis can be useful for businesses to understand customer feedback, for researchers to analyze social media posts, or for anyone who wants to explore the feelings and attitudes of people towards a topic.</p>
+										<div class="container">
+											<div class="row">
+												
+												<div class="col-4 col-12-medium">
+													<p><b>Programming Language(s) Used:</b><br/>
+													Python </p>
+												</div>
+												<div class="col-4 col-12-medium">
+													<p><b>Modules Used:</b><br/>
+													Pandas<br/>
+													Numpy<br/>
+													Tensorflow<br/>
+													Sklearn<br/>
+													</p>
+												</div>
+											</div>
+										</div>
+										<h3>How I carried out the Project</h3>
+										<p>
+											<b>Step 1:ETL</b><br/>
+											First, I obtained the data needed and wrote a function that loaded the texts and their labels into pandas dataframes(train and test sets).<br/>
+				
+											<b>Step 2:Data Pre-Processing</b><br/>
+											I proceeded to normalize the text data. This involves removing capitalizations, punctuation marks, etc. This is necessary for Machine Learning algorithms to be able to read the texts without problems.To do this I created a for loop that inputs every comment and put it in lower case, and then remove all other special characters and punctuation marks.<br/>
+											<b>Step 3: Model Training</b><br/>
+							                 To train the model I first used a Count Vectorizer to transform the texts into a matrix counts on which I then trained a Logistic Regression algorithm after doing a train/test split on the data. This algorithm is great for binomial variables and in this case, I only considered whether a comment is positive or not so it was feasible to use it.<br/>
+							                 <b>Step 4: Model Evaluation and Testing</b><br/>
+											 To test the algorithm, I ran predictions and calculated the accuracy score using different levels of confidence. All scores were found to be over 70%, meaning seven out of ten times, the model was managing to correctly identify comments as either positive or negative. This is a satisfactory level of accuracy, but the results may be improved by training the model on more data.  <br/>
+							                <b>Step 5: Test it Yourself!</b><br/>
+											I have created a Web Application that will allow you to test this Machine Learning model yourself. Click the button below to go to the WebApp.
+											
+										</p>
+										<div class="container">
+											<div class="row">
+												
+												<div class="col-4 col-12-medium">
+													<ul class="actions">
+														<li><a href="#" class="button">Go to WebApp </a></li>
+													</ul>
+												</div>
+												<div class="col-4 col-12-medium">
+													<ul class="actions">
+														<li><a href="#" class="button">View Code </a></li>
+													</ul>
+													
+												</div>
+											</div>
+										</div>
+										<a href="#" class="image fit"><img src="project/images/profile.jpg" alt="" /></a>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+					
+						
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Runesu. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="project/assets/js/jquery.min.js"></script>
+			<script src="project/assets/js/jquery.scrolly.min.js"></script>
+			<script src="project/assets/js/jquery.dropotron.min.js"></script>
+			<script src="project/assets/js/jquery.scrollex.min.js"></script>
+			<script src="project/assets/js/browser.min.js"></script>
+			<script src="project/assets/js/breakpoints.min.js"></script>
+			<script src="project/assets/js/util.js"></script>
+			<script src="project/assets/js/main.js"></script>
+
+	</body>
+</html>
