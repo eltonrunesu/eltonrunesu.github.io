@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="project/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Runesu</a></h1>
+					
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Customer Segmentation</h2>
+							<p>Dividing our Customers into groups based on similar characteristics.<br />
+							</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>In this Project</h3>
+											<p>Writing Python code to find the different groups of customers within the customer base of a mall. </p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://www.qualtrics.com/experience-management/brand/customer-segmentation/" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/avatar2.jpg" alt="" /></a>
+											<h3>By <b>Elton Runesu</b></h3>
+											<p>What's up doc?</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="#" class="button">View Resume</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="project/images/pic07.jpg" alt="" /></a>
+										<h3>What is Customer Segmentation?</h3>
+										<p>Customer segmentation analysis is a method of dividing customers into groups or clusters based on common characteristics.
+											 This can help businesses understand their customers better, tailor their marketing strategies, and optimize their resources.</p>
+										<div class="container">
+											<div class="row">
+												
+												<div class="col-4 col-12-medium">
+													<p><b>Programming Language(s) Used:</b><br/>
+													Python </p>
+												</div>
+												<div class="col-4 col-12-medium">
+													<p><b>Modules Used:</b><br/>
+													Pandas<br/>
+													Numpy<br/>
+													Matplotlib<br/>
+													Sklearn<br/>
+													</p>
+												</div>
+											</div>
+										</div>
+										<h3>How I carried out the Project</h3>
+										<p>
+											<b>Step 1:ETL</b><br/>
+											I began by loading in the data from a website and exploring it. The data was clean but it had extra columns that I did not need for the analysis. I removed these columns.<br/>
+				
+											<b>Step 2:Data Pre-Processing</b><br/>
+											Usually there is need for a RFM table to be created from the data when conducting this kind of analysis but this time,
+											 there was not enough data to do that, and the data had already been processed to capture some of the featuers of a RFM table.
+											  The data I had to my disposal was for A customer's annual income and an arbitrary spending score, which were enough to conduct this analysis.<br/>
+											<b>Step 3: Determining Optimal number of Clusters</b><br/>
+											I used Within Clusters Sum of Squares to do this.
+							                 I wrote a for loop that conducted K-Means clustering for k =1 to k=10. The loop also saved the inertia, which is useful in determining optimal number of lags.A graph was useful to show that 5 was the optimal number of clusters. 
+											 At this point, we knew our customers could be divided into 5 different groups given the data we had on them. <br/>
+							                 <b>Step 4: Model Training</b><br/>
+											 Next, I trained a k-means clustering machine learning algorithm to now learn and predict which of the 5 groups every customer belonged in.  <br/>
+							                <b>Step 5: Visualize the Findings</b><br/>
+											Data Visualization is very important to present the findings to stakeholders in a way they can understand more intuitively. It also helps to audit findings and see if the model results make any sense. To see the visualization, kindly access the code by clicking the button below.
+											
+										</p>
+										<div class="container">
+											<div class="row">
+												
+												
+												<div class="col-4 col-12-medium">
+													<ul class="actions">
+														<li><a href="project/assets/project code/Customer Segmentation K Means.html" class="button">View Code </a></li>
+													</ul>
+													
+												</div>
+											</div>
+										</div>
+										
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+					
+						
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Runesu. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="project/assets/js/jquery.min.js"></script>
+			<script src="project/assets/js/jquery.scrolly.min.js"></script>
+			<script src="project/assets/js/jquery.dropotron.min.js"></script>
+			<script src="project/assets/js/jquery.scrollex.min.js"></script>
+			<script src="project/assets/js/browser.min.js"></script>
+			<script src="project/assets/js/breakpoints.min.js"></script>
+			<script src="project/assets/js/util.js"></script>
+			<script src="project/assets/js/main.js"></script>
+
+	</body>
+</html>
